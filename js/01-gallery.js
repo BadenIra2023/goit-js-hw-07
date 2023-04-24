@@ -27,7 +27,7 @@ addImagesEl.addEventListener("click", handleClick);
 function handleClick(event)
 {
   event.preventDefault();
-  if (event.target.classList.value !== "gallery__image") {
+  if (event.target.nodeName !== "IMG") {
     return;
   }
   basicLightbox.create(`

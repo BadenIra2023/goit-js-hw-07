@@ -12,16 +12,6 @@ const imgItems = galleryItems
  )
     .join("");
 addImagesEl.insertAdjacentHTML("beforeend", imgItems);
-addImagesEl.addEventListener("click", handleClick);
 new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250});
-
-function handleClick(event)
-{
-    event.preventDefault();
-    if (event.target.classList.value !== "gallery__image") {
-    return;
-  }
-    
- };
 console.log(galleryItems);
 
